@@ -6,7 +6,10 @@ public class User implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private User user;
+	public User() {
+	}
+
+	public User user;
 
 	public User(User user) {
 		this.user = user;
