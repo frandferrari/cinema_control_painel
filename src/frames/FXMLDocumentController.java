@@ -1,4 +1,4 @@
-package application;
+package frames;
 
 import util.ConnectionUtil;
 import java.net.URL;
