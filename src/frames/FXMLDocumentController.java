@@ -29,12 +29,12 @@ public class FXMLDocumentController implements Initializable {
 	Stage dialogStage = new Stage();
 	Scene scene;
 
-	Connection connection = null;
+	Connection conn = null;
 	PreparedStatement preparedStatement = null;
 	ResultSet resultSet = null;
 
 	public FXMLDocumentController() {
-		connection = ConnectionUtil.connectdb();
+		conn = ConnectionUtil.connectdb();
 	}
 
 	public void loginAction(ActionEvent event) {
@@ -44,7 +44,7 @@ public class FXMLDocumentController implements Initializable {
 		String sql = "SELECT * FROM employee WHERE email = ? and password = ?";
 
 		try {
-			preparedStatement = connection.prepareStatement(sql);
+			preparedStatement = conn.prepareStatement(sql);
 			preparedStatement.setString(1, email);
 			preparedStatement.setString(2, password);
 			resultSet = preparedStatement.executeQuery();
