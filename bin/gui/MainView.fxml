@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" nodeOrientation="LEFT_TO_RIGHT" prefHeight="487.0" prefWidth="673.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
+	<children>
+		<ImageView fitHeight="465.0" fitWidth="170.0" layoutX="8.0" layoutY="14.0">
+			<image>
+				<Image url="@../../../../../../../Área%20de%20Trabalho/22.png" />
+			</image>
+		</ImageView>
+		<Text layoutX="27.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bem-vindo!" textAlignment="RIGHT" underline="true">
+			<font>
+				<Font name="System Bold" size="24.0" />
+			</font>
+		</Text>
+		<ComboBox fx:id="comboBoxMovie" layoutX="14.0" layoutY="49.0" onAction="#onComboBoxMovieAction" prefHeight="25.0" prefWidth="158.0" promptText="Filmes em cartaz">
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+		</ComboBox>
+		<ButtonBar blendMode="SRC_ATOP" layoutX="-8.0" layoutY="448.0" prefHeight="17.0" prefWidth="158.0">
+			<buttons>
+				<Button fx:id="btHome" mnemonicParsing="false" text="Início">
+					<font>
+						<Font name="System Bold" size="12.0" />
+					</font>
+				</Button>
+				<Button fx:id="btExit" mnemonicParsing="false" text="Sair">
+					<font>
+						<Font name="System Bold" size="12.0" />
+					</font>
+				</Button>
+			</buttons>
+		</ButtonBar>
+		<ImageView fitHeight="316.0" fitWidth="316.0" layoutX="250.0" layoutY="-112.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+			
+			</image>
+		</ImageView>
+		<Text layoutX="231.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Para reservar um assento, leia os passos abaixo:" wrappingWidth="384.103515625">
+			<font>
+				<Font name="System Bold" size="16.0" />
+			</font>
+		</Text>
+		<Text layoutX="187.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Primeiro escolha um filme em cartaz." wrappingWidth="442.13671875">
+			<font>
+				<Font size="13.0" />
+			</font>
+		</Text>
+		<Text layoutX="188.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Você será levado a uma aba em que poderá conferir os detalhes do filme." wrappingWidth="463.13671875">
+			<font>
+				<Font size="13.0" />
+			</font>
+		</Text>
+		<Text layoutX="188.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Clicando na opção &quot;Assentos&quot; poderá ver os lugares que ainda estão vagos naquela sessão." wrappingWidth="471.13671875">
+			<font>
+				<Font size="13.0" />
+			</font>
+		</Text>
+		<Text layoutX="187.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Ao escolher o(s) assento(s) você terá a opção de comprar os ingressos e escolher suas respectivas categorias (criança, adulto, estudante, idoso)." wrappingWidth="442.13671875">
+			<font>
+				<Font size="13.0" />
+			</font>
+		</Text>
+		<Text layoutX="187.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Após o término da compra, os assentos já estarão reservados em seu nome!" wrappingWidth="450.13671875">
+			<font>
+				<Font size="13.0" />
+			</font>
+		</Text>
+		<Text layoutX="187.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. Caso queira conferir o número e horário da sua sessão, é só ir em &quot;Minhas sessões&quot; no menu a esquerda." wrappingWidth="450.1367187499999">
+			<font>
+				<Font size="13.0" />
+			</font>
+		</Text>
+		<Text layoutX="566.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bom filme!">
+			<font>
+				<Font name="System Bold" size="16.0" />
+			</font>
+		</Text>
+      <Button fx:id="matrixTeste" layoutX="56.0" layoutY="104.0" mnemonicParsing="false" onAction="#onMenuItemAboutAction" text="matrix teste" />
+	</children>
+</AnchorPane>
