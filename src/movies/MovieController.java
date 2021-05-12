@@ -13,6 +13,7 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 
 public class MovieController {
@@ -22,6 +23,15 @@ public class MovieController {
 
 	@FXML
 	public Button btExit;
+	
+	@FXML
+	public ImageView imageTest;
+	
+	@FXML
+	public void onImageTestMouseClicked() {
+		loadView("/movies/Toy_Story.fxml", x -> {
+		});
+	}
 
 	@FXML
 	public void onBtExitAction(ActionEvent event) {

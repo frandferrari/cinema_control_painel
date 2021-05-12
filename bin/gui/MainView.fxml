@@ -41,11 +41,6 @@
 				</Button>
 			</buttons>
 		</ButtonBar>
-		<ImageView fitHeight="316.0" fitWidth="316.0" layoutX="250.0" layoutY="-112.0" pickOnBounds="true" preserveRatio="true">
-			<image>
-			
-			</image>
-		</ImageView>
 		<Text layoutX="231.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Para reservar um assento, leia os passos abaixo:" wrappingWidth="384.103515625">
 			<font>
 				<Font name="System Bold" size="16.0" />
@@ -86,7 +81,10 @@
 				<Font name="System Bold" size="16.0" />
 			</font>
 		</Text>
-      <Button fx:id="matrixTeste" layoutX="56.0" layoutY="104.0" mnemonicParsing="false" onAction="#onMenuItemAboutAction" text="matrix teste" />
-      <Button fx:id="toystoryTeste" layoutX="67.0" layoutY="156.0" mnemonicParsing="false" onAction="#toystoryMovie" text="toy story teste" />
+		<Button fx:id="matrixTeste" layoutX="41.0" layoutY="86.0" mnemonicParsing="false" onAction="#onMenuItemAboutAction" text="Filmes em cartaz" />
+      <ImageView fitHeight="328.0" fitWidth="384.0" layoutX="244.0" layoutY="-118.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Área%20de%20Trabalho/10f07df34182e3bf2ed53660c41f8b25.png" />
+         </image></ImageView>
 	</children>
 </AnchorPane>
