@@ -40,13 +40,16 @@ public class MainViewController implements Initializable {
 
 	@FXML
 	private Button btExit;
-	
+
 	@FXML
 	private Button matrixTeste;
 
 	@FXML
-	private Button btHome;
+	private Button toystoryTeste;
 
+	@FXML
+	private Button btHome;
+	
 	private ObservableList<Movie> obsList;
 
 	@FXML
@@ -79,10 +82,16 @@ public class MainViewController implements Initializable {
 		comboBoxMovie.setButtonCell(factory.call(null));
 
 	}
-	
+
 	@FXML
 	public void onMenuItemAboutAction() {
 		loadView("/movies/Matrix.fxml", x -> {
+		});
+	}
+
+	@FXML
+	public void toystoryMovie() {
+		loadView("/movies/Toy_Story.fxml", x -> {
 		});
 	}
 
