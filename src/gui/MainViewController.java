@@ -10,8 +10,10 @@ import java.util.function.Consumer;
 import application.Main;
 import entities.Movie;
 import gui.util.Alerts;
+import gui.util.Utils;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -34,10 +36,16 @@ public class MainViewController implements Initializable {
 	private Button btAll;
 
 	@FXML
+	private AnchorPane rootPane;
+
+	@FXML
+	private Button btExit;
+	
+	@FXML
 	private Button matrixTeste;
 
 	@FXML
-	private AnchorPane rootPane;
+	private Button btHome;
 
 	private ObservableList<Movie> obsList;
 
@@ -57,6 +65,7 @@ public class MainViewController implements Initializable {
 
 		obsList = FXCollections.observableArrayList(list);
 		comboBoxMovie.setItems(obsList);
+		comboBoxMovie.getItems();
 
 		Callback<ListView<Movie>, ListCell<Movie>> factory = lv -> new ListCell<Movie>() {
 			@Override
@@ -68,15 +77,27 @@ public class MainViewController implements Initializable {
 
 		comboBoxMovie.setCellFactory(factory);
 		comboBoxMovie.setButtonCell(factory.call(null));
-	}
 
+	}
+	
 	@FXML
 	public void onMenuItemAboutAction() {
 		loadView("/movies/Matrix.fxml", x -> {
 		});
 	}
 
-	private synchronized <T> void loadView(String absoluteName, Consumer<T> initializingAction) {
+	@FXML
+	public void onBtExitAction(ActionEvent event) {
+		Utils.currentStage(event).close();
+	}
+
+	@FXML
+	public void onBtHomeAction() {
+		loadView("/gui/MainView.fxml", x -> {
+		});
+	}
+
+	protected synchronized <T> void loadView(String absoluteName, Consumer<T> initializingAction) {
 		try {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(absoluteName));
 			AnchorPane newVBox = loader.load();

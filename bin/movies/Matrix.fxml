@@ -22,7 +22,7 @@
 		</Text>
 		<ButtonBar blendMode="SRC_ATOP" layoutX="-8.0" layoutY="448.0" prefHeight="17.0" prefWidth="158.0">
 			<buttons>
-				<Button fx:id="btHome" mnemonicParsing="false" text="Início">
+				<Button mnemonicParsing="false" text="Início">
 					<font>
 						<Font name="System Bold" size="12.0" />
 					</font>
