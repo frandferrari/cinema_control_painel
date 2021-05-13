@@ -7,11 +7,27 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane id="AnchorPane" nodeOrientation="LEFT_TO_RIGHT" prefHeight="487.0" prefWidth="673.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="movies.MovieController">
 	<children>
+      <AnchorPane layoutX="190.0" layoutY="165.0" prefHeight="314.0" prefWidth="469.0">
+         <children>
+            <Text layoutX="6.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comprar ingressos">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Line endX="-49.0" endY="283.0" layoutX="185.0" layoutY="27.0" startX="-49.0" startY="-24.0" />
+            <ScrollPane layoutX="147.0" layoutY="3.0" prefHeight="308.0" prefWidth="321.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="306.0" prefWidth="319.0" />
+              </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
 		<ImageView fitHeight="465.0" fitWidth="170.0" layoutX="8.0" layoutY="14.0">
 			<image>
 				<Image url="@../../../../../../../Área%20de%20Trabalho/22.png" />
@@ -36,7 +52,7 @@
 				</Button>
 			</buttons>
 		</ButtonBar>
-      <AnchorPane layoutX="190.0" layoutY="14.0" prefHeight="465.0" prefWidth="469.0">
+      <AnchorPane layoutX="190.0" layoutY="14.0" prefHeight="143.0" prefWidth="469.0">
          <children>
             <ScrollPane prefHeight="142.0" prefWidth="469.0">
               <content>
@@ -102,6 +118,7 @@
                   </AnchorPane>
               </content>
             </ScrollPane>
-         </children></AnchorPane>
+         </children>
+      </AnchorPane>
 	</children>
 </AnchorPane>
