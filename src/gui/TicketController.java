@@ -62,6 +62,37 @@ public class TicketController implements Initializable {
 	}
 	
 	@FXML
+	public void onImageInterestellarTicketClicked() {
+		loadView("/gui/Interestellar.fxml", x -> {
+		});
+	}
+	
+	@FXML
+	public void onImageToyStoryTicketClicked() {
+		loadView("/gui/Toy_Story.fxml", x -> {
+		});
+	}
+	
+	@FXML
+	public void onImageImpossibleTicketClicked() {
+		loadView("/gui/Impossible.fxml", x -> {
+		});
+	}
+	
+	@FXML
+	public void onImageAvengersTicketClicked() {
+		loadView("/gui/Avengers.fxml", x -> {
+		});
+	}
+	
+	@FXML
+	public void onImageForrestGumpTicketClicked() {
+		loadView("/gui/ForrestGump.fxml", x -> {
+		});
+	}
+	
+	
+	@FXML
 	public void onBtExitAction(ActionEvent event) {
 		Utils.currentStage(event).close();
 	}

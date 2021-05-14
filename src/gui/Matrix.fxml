@@ -88,7 +88,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="imageInterestellar" fitHeight="115.0" fitWidth="84.0" layoutX="192.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="imageInterestellar" fitHeight="115.0" fitWidth="84.0" layoutX="192.0" layoutY="7.0" onMouseClicked="#onImageInterestellarTicketClicked" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../../../../../../Área%20de%20Trabalho/ddqgqdqd/Interstellar_Filme.png" />
                            </image>
@@ -96,7 +96,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="imageToyStory" fitHeight="115.0" fitWidth="84.0" layoutX="276.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="imageToyStory" fitHeight="115.0" fitWidth="84.0" layoutX="276.0" layoutY="7.0" onMouseClicked="#onImageToyStoryTicketClicked" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../../../../../../Área%20de%20Trabalho/ddqgqdqd/Toy_Story_1995.jpg" />
                            </image>
@@ -104,7 +104,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="imageImpossible" fitHeight="115.0" fitWidth="84.0" layoutX="370.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="imageImpossible" fitHeight="115.0" fitWidth="84.0" layoutX="370.0" layoutY="5.0" onMouseClicked="#onImageImpossibleTicketClicked" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../../../../../../Área%20de%20Trabalho/ddqgqdqd/Mission_Impossible_Pôster.jpg" />
                            </image>
@@ -112,7 +112,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="imageAvengers" fitHeight="115.0" fitWidth="84.0" layoutX="454.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="imageAvengers" fitHeight="115.0" fitWidth="84.0" layoutX="454.0" layoutY="7.0" onMouseClicked="#onImageAvengersTicketClicked" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../../../../../../Área%20de%20Trabalho/ddqgqdqd/250px-Avengers_Endgame.jpg" />
                            </image>
@@ -120,7 +120,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="imageForrestGump" fitHeight="115.0" fitWidth="84.0" layoutX="545.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="imageForrestGump" fitHeight="115.0" fitWidth="84.0" layoutX="545.0" layoutY="8.0" onMouseClicked="#onImageForrestGumpTicketClicked" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../../../../../../Área%20de%20Trabalho/ddqgqdqd/ForrestGumpPoster.jpg" />
                            </image>

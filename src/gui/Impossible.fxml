@@ -24,14 +24,14 @@
             <Line endX="-49.0" endY="283.0" layoutX="185.0" layoutY="27.0" startX="-49.0" startY="-24.0" />
             <ScrollPane layoutX="147.0" layoutY="3.0" prefHeight="308.0" prefWidth="321.0">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="514.0" prefWidth="319.0">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="340.0" prefWidth="319.0">
                      <children>
                         <ImageView fitHeight="172.0" fitWidth="123.0" layoutX="8.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../../../../Área%20de%20Trabalho/ddqgqdqd/12439-cartaz.jpg" />
+                              <Image url="@../../../../../../../Área%20de%20Trabalho/ddqgqdqd/Mission_Impossible_Pôster.jpg" />
                            </image>
                         </ImageView>
-                        <Text layoutX="8.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Em um futuro próximo, Thomas Anderson (Keanu Reeves), um jovem programador de computador que mora em um cubículo escuro, é atormentado por estranhos pesadelos nos quais encontra-se conectado por cabos e contra sua vontade, em um imenso sistema de computadores do futuro. Em todas essas ocasiões, acorda gritando no exato momento em que os eletrodos estão para penetrar em seu cérebro. À medida que o sonho se repete, Anderson começa a ter dúvidas sobre a realidade. Por meio do encontro com os misteriosos Morpheus (Laurence Fishburne) e Trinity (Carrie-Anne Moss), Thomas descobre que é, assim como outras pessoas, vítima do Matrix, um sistema inteligente e artificial que manipula a mente das pessoas, criando a ilusão de um mundo real enquanto usa os cérebros e corpos dos indivíduos para produzir energia. Morpheus, entretanto, está convencido de que Thomas é Neo, o aguardado messias capaz de enfrentar o Matrix e conduzir as pessoas de volta à realidade e à liberdade." wrappingWidth="290.0" />
+                        <Text layoutX="8.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="O agente do governo Ethan Hunt e seu mentor, Jim Phelps, embarcam em uma missão secreta que toma um rumo desastroso, na qual Jim é morto e Ethan torna-se o principal suspeito do assassinato. Agora um fugitivo, Hunt recruta o brilhante Luther Stickell e o piloto Franz Krieger para ajudá-lo a entrar no prédio da CIA, fortemente vigiado, a fim de pegar um arquivo de computador confidencial que vai provar sua inocência." wrappingWidth="290.0" />
                      </children></AnchorPane>
               </content>
             </ScrollPane>

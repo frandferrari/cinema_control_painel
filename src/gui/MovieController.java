@@ -67,6 +67,36 @@ public class MovieController {
 		loadView("/gui/Fast_and_Furious.fxml", x -> {
 		});
 	}
+	
+	@FXML
+	public void onImageInterestellarMouseClicked() {
+		loadView("/gui/Interestellar.fxml", x -> {
+		});
+	}
+
+	@FXML
+	public void onImageToyStoryMouseClicked() {
+		loadView("/gui/Toy_Story.fxml", x -> {
+		});
+	}
+	
+	@FXML
+	public void onImageImpossibleMouseClicked() {
+		loadView("/gui/Impossible.fxml", x -> {
+		});
+	}
+	
+	@FXML
+	public void onImageAvengersMouseClicked() {
+		loadView("/gui/Avengers.fxml", x -> {
+		});
+	}
+	
+	@FXML
+	public void onImageForrestGumpMouseClicked() {
+		loadView("/gui/ForrestGump.fxml", x -> {
+		});
+	}
 
 	@FXML
 	public void onBtExitAction(ActionEvent event) {
