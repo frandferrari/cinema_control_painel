@@ -34,6 +34,9 @@ public class TicketController implements Initializable {
 
 	@FXML
 	public Button btExit;
+	
+	@FXML
+	public Button next;
 
 	@FXML
 	private ComboBox<Ticket> ticketNormal;

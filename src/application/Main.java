@@ -20,7 +20,7 @@ public class Main extends Application {
 
 			mainScene = new Scene(pane);
 			primaryStage.setScene(mainScene);
-			primaryStage.setTitle("Sample JavaFX application");
+			primaryStage.setTitle("Cinema");
 			primaryStage.show();
 		} catch (IOException e) {
 			e.printStackTrace();

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ButtonBar?>
-<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -22,11 +20,6 @@
 				<Font name="System Bold" size="24.0" />
 			</font>
 		</Text>
-		<ComboBox fx:id="comboBoxMovie" layoutX="14.0" layoutY="49.0" onAction="#onComboBoxMovieAction" prefHeight="25.0" prefWidth="158.0" promptText="Filmes em cartaz">
-			<opaqueInsets>
-				<Insets />
-			</opaqueInsets>
-		</ComboBox>
 		<ButtonBar blendMode="SRC_ATOP" layoutX="-8.0" layoutY="448.0" prefHeight="17.0" prefWidth="158.0">
 			<buttons>
 				<Button fx:id="btHome" mnemonicParsing="false" onAction="#onBtHomeAction" text="Início">
@@ -81,7 +74,7 @@
 				<Font name="System Bold" size="16.0" />
 			</font>
 		</Text>
-		<Button fx:id="matrixTeste" layoutX="41.0" layoutY="86.0" mnemonicParsing="false" onAction="#onMenuItemAboutAction" text="Filmes em cartaz" />
+		<Button fx:id="matrixTeste" layoutX="41.0" layoutY="52.0" mnemonicParsing="false" onAction="#onMenuItemAboutAction" text="Filmes em cartaz" />
       <ImageView fitHeight="328.0" fitWidth="384.0" layoutX="244.0" layoutY="-118.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../../../../Área%20de%20Trabalho/10f07df34182e3bf2ed53660c41f8b25.png" />
