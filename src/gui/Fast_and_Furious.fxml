@@ -3,6 +3,7 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -11,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" nodeOrientation="LEFT_TO_RIGHT" prefHeight="487.0" prefWidth="673.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MovieController">
+<AnchorPane id="AnchorPane" nodeOrientation="LEFT_TO_RIGHT" prefHeight="487.0" prefWidth="673.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.TicketController">
 	<children>
       <AnchorPane layoutX="190.0" layoutY="165.0" prefHeight="314.0" prefWidth="469.0">
          <children>
@@ -23,9 +24,22 @@
             <Line endX="-49.0" endY="283.0" layoutX="185.0" layoutY="27.0" startX="-49.0" startY="-24.0" />
             <ScrollPane layoutX="147.0" layoutY="3.0" prefHeight="308.0" prefWidth="321.0">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="306.0" prefWidth="319.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="319.0">
+                     <children>
+                        <ImageView fitHeight="172.0" fitWidth="123.0" layoutX="8.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../Área%20de%20Trabalho/ddqgqdqd/Fast_and_Furious_Poster.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="8.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brian O'Conner é um policial que se infiltra no submundo dos rachas de rua para investigar uma série de furtos. Enquanto tenta ganhar o respeito e a confiança do líder Dom Toretto, ele corre o risco de ser desmascarado." wrappingWidth="290.0" />
+                     </children></AnchorPane>
               </content>
             </ScrollPane>
+            <ComboBox fx:id="ticketNormal" layoutX="6.0" layoutY="29.0" onAction="#onComboBoxTicketNormalAction" prefHeight="19.0" prefWidth="123.0" promptText="Normal" />
+            <ComboBox fx:id="ticketHalf" layoutX="6.0" layoutY="74.0" onAction="#onComboBoxTicketHalfAction" prefHeight="25.0" prefWidth="123.0" promptText="Meia-entrada" />
+            <ComboBox fx:id="ticketStudent" layoutX="6.0" layoutY="118.0" onAction="#onComboBoxTicketStudentAction" prefHeight="25.0" prefWidth="123.0" promptText="Estudante" />
+            <ComboBox fx:id="ticketElderly" layoutX="6.0" layoutY="164.0" onAction="#onComboBoxTicketElderlyAction" prefHeight="25.0" prefWidth="123.0" promptText="Idoso" />
+            <Button fx:id="next" layoutX="67.0" layoutY="286.0" mnemonicParsing="false" text="Próximo" />
          </children>
       </AnchorPane>
 		<ImageView fitHeight="465.0" fitWidth="170.0" layoutX="8.0" layoutY="14.0">
@@ -58,7 +72,7 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="125.0" prefWidth="652.0">
                      <children>
-                        <ImageView fx:id="imageMatrix" fitHeight="115.0" fitWidth="84.0" layoutX="13.0" layoutY="7.0" onMouseClicked="#onImageMatrixMouseClicked" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="115.0" fitWidth="84.0" layoutX="13.0" layoutY="7.0" onMouseClicked="#onImageMatrixTicketClicked" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../../../../../../Área%20de%20Trabalho/ddqgqdqd/12439-cartaz.jpg" />
                            </image>
@@ -66,7 +80,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="imageFastAndFurious" fitHeight="115.0" fitWidth="84.0" layoutX="104.0" layoutY="7.0" onMouseClicked="#onImageFastAndFuriousMouseClicked" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="115.0" fitWidth="84.0" layoutX="104.0" layoutY="7.0" onMouseClicked="#onImageFastAndFuriousTicketClicked" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../../../../../../Área%20de%20Trabalho/ddqgqdqd/Fast_and_Furious_Poster.jpg" />
                            </image>

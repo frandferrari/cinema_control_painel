@@ -50,11 +50,17 @@ public class TicketController implements Initializable {
 	private ObservableList<Ticket> ticketList;
 
 	@FXML
-	public void onImageTestMouseClicked() {
+	public void onImageMatrixTicketClicked() {
 		loadView("/gui/Matrix.fxml", x -> {
 		});
 	}
-
+	
+	@FXML
+	public void onImageFastAndFuriousTicketClicked() {
+		loadView("/gui/Fast_and_Furious.fxml", x -> {
+		});
+	}
+	
 	@FXML
 	public void onBtExitAction(ActionEvent event) {
 		Utils.currentStage(event).close();

@@ -33,14 +33,38 @@ public class MovieController {
 	public ComboBox<Ticket> ticketElderly;
 
 	@FXML
+	public ImageView imageMatrix;
+	
+	@FXML
+	public ImageView imageFastAndFurious;
+	
+	@FXML
+	public ImageView imageInterestellar;
+	
+	@FXML
+	public ImageView imageToyStory;
+	
+	@FXML
+	public ImageView imageImpossible;
+	
+	@FXML
+	public ImageView imageAvengers;
+	
+	@FXML
+	public ImageView imageForrestGump;
+	
+	@FXML
 	public Button next;
 
 	@FXML
-	public ImageView imageTest;
-
-	@FXML
-	public void onImageTestMouseClicked() {
+	public void onImageMatrixMouseClicked() {
 		loadView("/gui/Matrix.fxml", x -> {
+		});
+	}
+	
+	@FXML
+	public void onImageFastAndFuriousMouseClicked() {
+		loadView("/gui/Fast_and_Furious.fxml", x -> {
 		});
 	}
 
