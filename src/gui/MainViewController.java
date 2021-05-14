@@ -85,7 +85,7 @@ public class MainViewController implements Initializable {
 
 	@FXML
 	public void onMenuItemAboutAction() {
-		loadView("/movies/Movies_in_theaters.fxml", x -> {
+		loadView("/gui/Movies_in_theaters.fxml", x -> {
 		});
 	}
 

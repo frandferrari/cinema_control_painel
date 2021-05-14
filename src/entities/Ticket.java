@@ -6,12 +6,14 @@ public class Ticket implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
+	private String number;
 	private Integer quantity;
 
 	public Ticket() {
 	}
-	
-	public Ticket(Integer quantity) {
+
+	public Ticket(String number, Integer quantity) {
+		this.number = number;
 		this.quantity = quantity;
 	}
 
@@ -23,11 +25,17 @@ public class Ticket implements Serializable {
 		this.quantity = quantity;
 	}
 
+	public String getNumber() {
+		return number;
+	}
+
+	public void setNumber(String number) {
+		this.number = number;
+	}
+
 	@Override
 	public String toString() {
-		return "Ticket [quantity=" + quantity + "]";
+		return "Ticket [number=" + number + ", quantity=" + quantity + "]";
 	}
-	
-	
 
 }
