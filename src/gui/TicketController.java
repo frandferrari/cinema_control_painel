@@ -129,6 +129,12 @@ public class TicketController implements Initializable {
 		Ticket Ticket = ticketElderly.getSelectionModel().getSelectedItem();
 		System.out.println(Ticket);
 	}
+	
+	@FXML
+	public void onBtNextAction() {
+		loadView("/gui/ConfirmPurchase.fxml", x -> {
+		});
+	}
 
 	@Override
 	public void initialize(URL url, ResourceBundle rb) {
@@ -173,7 +179,7 @@ public class TicketController implements Initializable {
 
 	}
 
-	protected synchronized <T> void loadView(String absoluteName, Consumer<T> initializingAction) {
+	public synchronized <T> void loadView(String absoluteName, Consumer<T> initializingAction) {
 		try {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(absoluteName));
 			AnchorPane newVBox = loader.load();

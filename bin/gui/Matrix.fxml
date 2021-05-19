@@ -39,7 +39,7 @@
             <ComboBox fx:id="ticketHalf" layoutX="6.0" layoutY="74.0" onAction="#onComboBoxTicketHalfAction" prefHeight="25.0" prefWidth="123.0" promptText="Meia-entrada" />
             <ComboBox fx:id="ticketStudent" layoutX="6.0" layoutY="118.0" onAction="#onComboBoxTicketStudentAction" prefHeight="25.0" prefWidth="123.0" promptText="Estudante" />
             <ComboBox fx:id="ticketElderly" layoutX="6.0" layoutY="164.0" onAction="#onComboBoxTicketElderlyAction" prefHeight="25.0" prefWidth="123.0" promptText="Idoso" />
-            <Button fx:id="next" layoutX="67.0" layoutY="286.0" mnemonicParsing="false" text="Próximo" />
+            <Button fx:id="next" layoutX="67.0" layoutY="286.0" mnemonicParsing="false" onAction="#onBtNextAction" text="Próximo" />
          </children>
       </AnchorPane>
 		<ImageView fitHeight="465.0" fitWidth="170.0" layoutX="8.0" layoutY="14.0">
